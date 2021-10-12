@@ -15,6 +15,7 @@
                     <v-col cols="7">
                       <v-text-field 
                           v-model="filtro" 
+                          v-onChange
                           filled
                           rounded
                           dense
