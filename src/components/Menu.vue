@@ -12,18 +12,16 @@
                   <v-container>
                   <v-row>
                     
-                    <v-col cols="7">
+                    <v-col cols="12" xs="12" md="8">
                       <v-text-field 
                           v-model="filtro" 
-                          v-onChange
                           filled
                           rounded
                           dense
-                          placeholder="Pokémon" append-icon="mdi-magnify" label="Nombre y/o Número"></v-text-field>
+                          class="search"
+                          placeholder="Pokémon" @click:append="getPokemons" append-icon="mdi-magnify" label="Nombre y/o Número"></v-text-field>
                     </v-col>
-                    <v-col cols="2" style="margin-Top:10px">
-                      <v-btn @click="getPokemons" elevation="2">Buscar</v-btn>
-                    </v-col>
+
                   </v-row>
                 </v-container> 
               </v-spacer>
